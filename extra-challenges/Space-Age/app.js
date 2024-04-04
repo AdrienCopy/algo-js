@@ -29,7 +29,12 @@
 
     let a = spaceAge(ageSeconds);
     console.log(a);
-    document.body.textContent = `Result :${a}`;
-    
+    //document.body.textContent = `Result :${a}`;
+
+    let newElement = document.createElement("div");
+    newElement.textContent = `Result :${a.toFixed(2)} years`;
+    newElement.style.fontSize = "30px";
+    newElement.style.textAlign = "center";
+    document.body.appendChild(newElement)
 })();
 
